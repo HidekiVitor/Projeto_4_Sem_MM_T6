@@ -1,5 +1,56 @@
-/* tesste*/
+/* teste*/
+
+/*Importação google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+/* CSS Reset */
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
 
 body{ 
     background: linear-gradient(50deg, #6cc3f4 1%, #ec45af 99%);
+    font-family: "Acme", sans-serif;
+    font-size: 1em;
+}
+
+/* Layout */
+    .Container {
+        margin: 0 auto;
+    }
+
+/* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media(min-width: 576px){
+    /* Layout */
+    .Container {
+        max-width: 540px;
+    }
+
+}
+
+/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media(min-width: 768px){
+     /* Layout */
+    .Container {
+        max-width: 720px;
+    }  
+    
+}
+/* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media(min-width: 992px){
+    .Container {
+        max-width: 960px;
+    }  
+    
+}
+/* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media(min-width: 1200px){
+    .Container {
+        max-width: 1140px;
+    }  
+    
 }
