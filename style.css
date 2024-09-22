@@ -47,6 +47,37 @@ header {
     height: 128px;
 }
 
+/*colocar o texto ao lado do logo*/
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-title {
+    margin-left: 10px; 
+    text-align: left; 
+}
+
+.header-title h1,
+.header-title h2 {
+    margin: 0; 
+    font-size: 30px;
+    background: linear-gradient(50deg, #1bb5fc 1%, #f125ad 99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header-title h1 {
+    color: #3987b4;
+}
+
+.header-title h2 {
+    color: #c74798;
+    text-align: center;
+}
+
 #check {
     display: none;
 }
@@ -85,26 +116,25 @@ nav ul li a {
 
 main {
     height: 75vh;
-    background: url(img/KILLIN.jpg);
+    background: url(img/twice.jpg);
     background-size: cover;
-}
-
-main h1 {
-    color: #6bb2db;
-    display: inline-block;
-}
-
-main h2 {
-    color: #d85caa;
     
 }
-
 
 /*Texto de quem nós somos*/
 
 #sobre {
     
     text-align: center;
+}
+
+#sobre h2 {
+    background: linear-gradient(50deg, #13b4ff 1%, #ff15b1 99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-top: -7px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 #sobre h3 {
@@ -149,7 +179,7 @@ main h2 {
     #logo img {
         width: 130px;
         height: 130px;
-        margin-top: 1px;
+        margin-top: -7px;
     }   
 
     label {
