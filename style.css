@@ -24,7 +24,11 @@ body{
 .Flex{
     display: flex;
     justify-content: space-between;
+}
 
+.Flex2 {
+    display: flex;
+    align-items: center;
 }
 
 /*topo do site */
@@ -77,6 +81,19 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #fff;
+}
+
+/* Proximos Eventos */
+#proximoseventos {
+    padding: 50px 0px;    
+}
+
+#descritivoEvento {    
+    padding: 0px 10px;
+}
+
+#descritivoEvento h2 {
+    margin-bottom: 10px;
 }
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -142,5 +159,8 @@ nav ul li a {
     nav ul li a:hover {
         color:#ec45af
     }
-    
+
+    #destaqueEvento img {
+        margin-right: 50px;
+    }    
 }
