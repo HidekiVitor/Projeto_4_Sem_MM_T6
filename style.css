@@ -4,29 +4,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
 /* CSS Reset */
-*{
+* {
     margin: 0;
     border: 0;
     padding: 0;
 }
 
-body{ 
+body {
     background: linear-gradient(50deg, #6cc3f4 1%, #ec45af 99%);
     font-family: "Acme", sans-serif;
     font-size: 1em;
 }
 
-
-
 /* Layout */
- .Container {
+.Container {
     margin: 0 auto;
 }
 
-.Flex{
+.Flex {
     display: flex;
     justify-content: space-between;
+}
 
+.Flex2 {
+    display: flex;
+    align-items: center;
 }
 
 /*topo do site */
@@ -39,29 +41,28 @@ body{
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* Cabeçalho*/
 header {
-    height: 60px;
+    height: 120px;
 }
 
-#logo img{
+#logo img {
     width: 128px;
     height: 128px;
 }
 
 /*colocar o texto ao lado do logo*/
-
 #logo {
     display: flex;
     align-items: center;
 }
 
 .header-title {
-    margin-left: 10px; 
-    text-align: left; 
+    margin-left: 10px;
+    text-align: left;
 }
 
 .header-title h1,
 .header-title h2 {
-    margin: 0; 
+    margin: 0;
     font-size: 30px;
     background: linear-gradient(50deg, #1bb5fc 1%, #f125ad 99%);
     -webkit-background-clip: text;
@@ -112,98 +113,52 @@ nav ul li a {
     color: #fff;
 }
 
-/* Destaque */
+/* Proximos Eventos */
+#proximoseventos {
+    padding: 50px 0px;
+}
 
+#descritivoEvento {
+    padding: 0px 10px;
+}
+
+#descritivoEvento h2 {
+    margin-bottom: 10px;
+}
+
+/* Destaque */
 main {
     height: 75vh;
     background: url(img/twice.jpg);
     background-size: cover;
-    
 }
 
 /*Texto de quem nós somos*/
-
 #sobre {
-    
     text-align: center;
 }
 
 #sobre h2 {
-    background: linear-gradient(50deg, #13b4ff 1%, #ff15b1 99%);
+    background: linear-gradient(50deg, #13b4ff 1%, #ff15aa 99%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin-top: -7px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 3em;
 }
 
 #sobre h3 {
-    text-align: justify;
-    font-size: 14px;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: black;
+    line-height: 1.6em;
 }
 
-/* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>*/
-@media(min-width: 576px){
-    /* Layout */
-    .Container {
-        max-width: 540px;
-    }
-
-}
-
-/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-@media(min-width: 768px){
-     /* Layout */
-    .Container {
-        max-width: 720px;
-    }  
-    
-}
-/* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-@media(min-width: 992px){
-    .Container {
-        max-width: 960px;
-    }  
-    
-}
-/* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-@media(min-width: 1200px){
-    /* Layout */
-    .Container {
-        max-width: 1140px;
-    }  
-    /* Cabeçalho */
-    header {
-        height: 120px;
-    }  
-    #logo img {
-        width: 130px;
-        height: 130px;
-        margin-top: -7px;
-    }   
-
-    label {
-        display: none;
-    }
-
-    nav ul {
-        position: static;
-        height: auto;
-        background-color: transparent;
-        margin-top: 50px;
-    }
-
-    nav ul li {
-        float: left;
-        border: 0;
-    }
-
-    nav ul li a {
-        color: #343538
-    }
-
-    nav ul li a:hover {
-        color:#ec45af
-    }
-    
+/* botão */
+.Botao {
+    text-decoration: none;
+    padding: 15px 100px;
+    font-size: 1em;
+    color: #e2e2e2;
+    background: linear-gradient(50deg, #13b4ff 1%, #ff15aa 99%);
+    border-radius: 15px;
 }
