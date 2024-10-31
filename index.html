@@ -13,6 +13,7 @@
     
     <link rel="icon" href="img/Logo_Topline_Events.jpeg">
     <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -21,10 +22,7 @@
         <div class="Container Flex">
             <div id="logo">
                 <img src="img/Logo_novo.png" alt="TopLine">
-                <div class="header-title"> <!-- colocar o logo do lado do h1 e h2 -->
-                    <h1>TopLine Events</h1>
-                    <h2>Brasil</h2>
-                </div>
+                
             </div>
             <nav>
                 <input type="checkbox" id="check">
@@ -32,7 +30,7 @@
                 <ul>
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#sobre">Quem Somos Nós?</a></li>
-                    <li><a href="#conteudo">Eventos</a></li>
+                    <li><a href="#slider">Eventos</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
@@ -63,9 +61,40 @@
     </section> <br>
 
     <!--alguns dos eventos-->
-    <section id="conteudo">
-        <div class="Container">
-            <h2>Eventos Realizados</h2>
+    <section id="slider">
+        <h2>Eventos Realizados</h2><br><br>
+        <div class="slider-content">
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+           
+            <div class="slide-box primeiro">
+                <img class= "img-desktop" src="img/slide1pc.jpeg" alt="slide 1">
+                <img class= "img-mobile" src="img/evento1mob.jpg" alt="slide 1">
+            </div>
+
+            <div class="slide-box">
+                <img class= "img-desktop" src="img/evento2pc.jpeg" alt="slide 2">
+                <img class= "img-mobile" src="img/evento2mob.jpg" alt="slide 2">
+            </div>
+
+            <div class="slide-box">
+                <img class= "img-desktop" src="img/evento3pc.jpeg" alt="slide 3">
+                <img class= "img-mobile" src="img/evento3mob.jpg" alt="slide 3">
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+            </div>
+
         </div>
     </section>
 
