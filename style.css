@@ -277,3 +277,72 @@ main {
     background: linear-gradient(50deg, #13b4ff 1%, #ff15aa 99%);
     border-radius: 15px;
 }
+
+/* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media(min-width: 576px){
+    /* Layout */
+    .Container {
+        max-width: 540px;
+    }
+
+}
+
+/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media(min-width: 768px){
+     /* Layout */
+    .Container {
+        max-width: 720px;
+    }  
+    
+}
+/* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media(min-width: 992px){
+    .Container {
+        max-width: 960px;
+    }  
+    
+}
+/* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media(min-width: 1200px){
+    /* Layout */
+    .Container {
+        max-width: 1140px;
+    }  
+    /* Cabeçalho */
+    header {
+        height: 120px;
+    }  
+    #logo img {
+        width: 150px;
+        height: 150px;
+        margin-top: 1px;
+    }   
+
+    label {
+        display: none;
+    }
+
+    nav ul {
+        position: static;
+        height: auto;
+        background-color: transparent;
+        margin-top: 50px;
+    }
+
+    nav ul li {
+        float: left;
+        border: 0;
+    }
+
+    nav ul li a {
+        color: #343538
+    }
+
+    nav ul li a:hover {
+        color:#ec45af
+    }
+
+    #destaqueEvento img {
+        margin-right: 50px;
+    }    
+}
