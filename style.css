@@ -165,7 +165,7 @@ section.slider {
     width: 25%;
     height: auto;
     position: relative;
-    text-align: center;\
+    text-align: center;
     transition: 1s;
 }
 
@@ -216,9 +216,11 @@ section.slider {
 }
 
 @media  and (max-width: 900px){
+
     .img-desktop{
-        display-none;
+    display:none;
     }
+
     .img-mobile{
         display: block;
     }
@@ -231,6 +233,13 @@ section.slider {
 /* Proximos Eventos */
 #proximoseventos {
     padding: 50px 0px;
+    text-align: center;
+}
+
+#proximoseventos h2 {
+    background: linear-gradient(50deg, #139ceb 1%, #ca0c84 99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #descritivoEvento {
@@ -239,6 +248,28 @@ section.slider {
 
 #descritivoEvento h2 {
     margin-bottom: 10px;
+}
+
+#proximoseventos h1, 
+#proximoseventos h2 {
+    background: linear-gradient(50deg, #139ceb 1%, #ca0c84 99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+#destaqueEvento {
+    display: flex;
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    gap: 10px; /* Espaço entre as imagens */
+    flex-wrap: wrap; /* Permite que as imagens quebrem linha em telas menores */
+}
+
+#destaqueEvento img {
+    width: 30%; /* Ajusta o tamanho das imagens proporcionalmente */
+    height: auto; /* Mantém a proporção das imagens */
+    border-radius: 10px; /* Bordas arredondadas (opcional) */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra nas imagens (opcional) */
 }
 
 /* Destaque */
