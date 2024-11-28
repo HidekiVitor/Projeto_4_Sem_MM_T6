@@ -11,7 +11,7 @@
 }
 
 body {
-    background: linear-gradient(50deg, #6cc3f4 1%, #ec45af 99%);
+    background: linear-gradient(50deg, #47b7f8 1%, #f763c1 99%);
     font-family: "Acme", sans-serif;
     font-size: 1em;
 }
@@ -86,8 +86,9 @@ header {
 
 main {
     height: 75vh;
-    background: url(img/twice.jpg);
-    background-size: cover;
+    background: url('img/strayKids.jpg') no-repeat center top !important;
+background-size: cover !important;
+
 }
 
 
@@ -260,16 +261,16 @@ section.slider {
 
 #destaqueEvento {
     display: flex;
-    justify-content: center; /* Centraliza as imagens horizontalmente */
-    gap: 10px; /* Espaço entre as imagens */
-    flex-wrap: wrap; /* Permite que as imagens quebrem linha em telas menores */
+    justify-content: center; 
+    gap: 10px; 
+    flex-wrap: wrap; 
 }
 
 #destaqueEvento img {
-    width: 30%; /* Ajusta o tamanho das imagens proporcionalmente */
-    height: auto; /* Mantém a proporção das imagens */
-    border-radius: 10px; /* Bordas arredondadas (opcional) */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra nas imagens (opcional) */
+    width: 30%; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
 }
 
 /* Destaque */
@@ -297,6 +298,67 @@ main {
     font-weight: 400;
     color: black;
     line-height: 1.6em;
+}
+
+/*fale conosco e formulario*/
+
+.footer-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-formulario form {
+    width: 100%;
+    max-width: 600px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-formulario .form-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.footer-formulario .form-control {
+    width: 100%;
+    max-width: 400px;  
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.footer-formulario .btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer-formulario .btn:hover {
+    background-color: #0056b3;
+}
+
+#contato h2 {
+    background: linear-gradient(50deg, #0c7aad 1%, #ff15aa 99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 2em;
+    align-items: center;
+}
+
+.Instagram {
+    height: 90px;
+    width: 90px;
 }
 
 /* botão */

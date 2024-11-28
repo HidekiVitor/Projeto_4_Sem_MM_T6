@@ -151,14 +151,50 @@
     <!--Calendário-->
     <section>
         <div class="Container">
-            <h2>Calendário</h2>
+            
         </div>
     </section>
 
     <!--Rodapé-->
     <footer id="contato">
+        <!-- Novo Formulário de Contato -->
+        <div class="footer-formulario col-12">
+            <h2>Envie sua mensagem!</h2>
+            <form action="/enviar_mensagem" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required class="form-control" placeholder="Digite seu nome">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required class="form-control" placeholder="Digite seu email">
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required class="form-control" placeholder="Digite seu telefone">
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Escreva sua mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required class="form-control" placeholder="Digite sua mensagem"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+
         <div class="Container">
-            <h2> Fale Conosco</h2>
+            
+    
+            <!-- Redes Sociais -->
+            <div class="instagram">
+                <h2>Redes Sociais</h2>
+                <a href="https://www.instagram.com/toplineventsbr/" target="_blank">
+                    <img src="img/icone-insta.png" alt="Instagram" class="Instagram">
+                </a><br>
+            </div>
+        </div>
+
+    </footer>
+    
         </div>
     </footer>
     <a href="#inicio" id="topo"><img src="img/topo.png" alt="topo do site"></a>
