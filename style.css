@@ -13,7 +13,7 @@
 body{ 
     background: linear-gradient(50deg, #6cc3f4 1%, #ec45af 99%);
     font-family: "Acme", sans-serif;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 
@@ -26,7 +26,11 @@ body{
 .Flex{
     display: flex;
     justify-content: space-between;
+}
 
+.Flex2 {
+    display: flex;
+    align-items: center;
 }
 
 /*topo do site */
@@ -81,6 +85,7 @@ nav ul li a {
     color: #fff;
 }
 
+<<<<<<< HEAD
 /* Destaque */
 
 main {
@@ -110,6 +115,19 @@ main h2 {
 #sobre h3 {
     text-align: justify;
     font-size: 14px;
+=======
+/* Proximos Eventos */
+#proximoseventos {
+    padding: 50px 0px;    
+}
+
+#descritivoEvento {    
+    padding: 0px 10px;
+}
+
+#descritivoEvento h2 {
+    margin-bottom: 10px;
+>>>>>>> main
 }
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -147,8 +165,13 @@ main h2 {
         height: 120px;
     }  
     #logo img {
+<<<<<<< HEAD
         width: 130px;
         height: 130px;
+=======
+        width: 150px;
+        height: 150px;
+>>>>>>> main
         margin-top: 1px;
     }   
 
@@ -175,5 +198,8 @@ main h2 {
     nav ul li a:hover {
         color:#ec45af
     }
-    
+
+    #destaqueEvento img {
+        margin-right: 50px;
+    }    
 }
