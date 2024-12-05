@@ -25,7 +25,11 @@ body {
     display: flex;
     justify-content: space-between;
 }
+}
 
+.Flex2 {
+    display: flex;
+    align-items: center;
 .Flex2 {
     display: flex;
     align-items: center;
@@ -434,6 +438,10 @@ main {
     nav ul li a:hover {
         color:#ec45af
     }
+
+    #destaqueEvento img {
+        margin-right: 50px;
+    }    
 
     #destaqueEvento img {
         margin-right: 50px;
