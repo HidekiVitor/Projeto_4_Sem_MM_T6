@@ -13,7 +13,7 @@
 body {
     background: linear-gradient(50deg, #47b7f8 1%, #f763c1 99%);
     font-family: "Acme", sans-serif;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 /* Layout */
@@ -25,11 +25,7 @@ body {
     display: flex;
     justify-content: space-between;
 }
-}
 
-.Flex2 {
-    display: flex;
-    align-items: center;
 .Flex2 {
     display: flex;
     align-items: center;
@@ -96,7 +92,6 @@ background-size: cover !important;
 }
 
 
-
 label {
     font-size: 3em;
     padding-right: 15px;
@@ -134,7 +129,6 @@ nav ul li a {
     -webkit-text-fill-color: transparent;
 }
 
-
 #sobre h3 {
     text-align: justify;
 }
@@ -220,7 +214,7 @@ section.slider {
     margin-left: 0%;
 }
 
-@media  and (max-width: 900px){
+@media screen and(max-width: 900px){
 
     .img-desktop{
     display:none;
@@ -277,157 +271,6 @@ section.slider {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
 }
 
-#sobre h2 {
-    text-align: center;
-    background: linear-gradient(50deg, #139ceb 1%, #ca0c84 99%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
-#sobre h3 {
-    text-align: justify;
-}
-
-/*eventos realizados*/
-
-#slider h2 {
-    text-align: center;
-    background: linear-gradient(50deg, #139ceb 1%, #ca0c84 99%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-section.slider {
-    margin: auto;
-    width: 100%;
-    height: auto;
-    padding: 0 !important;
-    overflow: hidden;
-}
-
-.slider-content {
-    width: 400%;
-    height: auto;
-    display: flex;
-}
-
-.slider-content input, .img-mobile {
-    display: none;
-}
-
-.slide-box {
-    width: 25%;
-    height: auto;
-    position: relative;
-    text-align: center;
-    transition: 1s;
-}
-
-.slide-box img {
-    width: 60%;
-}
-
-.nav-manual, .nav-auto {
-    position: absolute;
-    width: 100%;
-    margin-top: 65%;
-    display: flex; 
-    justify-content: center; 
-}
-
-.nav-manual .manual-btn, .nav-auto div {
-    border: 1px solid rgb(124, 0, 128);
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.2s, transform 0.2s; 
-    margin: 0 5px; 
-}
-
-.nav-manual .manual-btn:hover, .nav-auto div:hover { 
-    background-color: rgb(189, 2, 196);
-    transform: scale(1.1); 
-}
-
-.nav-manual .manual-btn:hover {
-    background-color: rgb(189, 2, 196);
-}
-
-#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{
-    background-color: rgb(189, 2, 196);
-}
-
-#radio2:checked ~ .primeiro{
-    margin-left: -25%;
-}
-
-#radio3:checked ~ .primeiro{
-    margin-left: -50%;
-}
-
-#radio1:checked ~ .primeiro{
-    margin-left: 0%;
-}
-
-@media  and (max-width: 900px){
-
-    .img-desktop{
-    display:none;
-    }
-
-    .img-mobile{
-        display: block;
-    }
-
-    .nav-auto, .nav-manual{
-        margin-top: 80%
-    }
-}
-
-/* Proximos Eventos */
-#proximoseventos {
-    padding: 50px 0px;
-    text-align: center;
-}
-
-#proximoseventos h2 {
-    background: linear-gradient(50deg, #139ceb 1%, #ca0c84 99%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-#descritivoEvento {
-    padding: 0px 10px;
-}
-
-#descritivoEvento h2 {
-    margin-bottom: 10px;
-}
-
-#proximoseventos h1, 
-#proximoseventos h2 {
-    background: linear-gradient(50deg, #139ceb 1%, #ca0c84 99%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-}
-
-#destaqueEvento {
-    display: flex;
-    justify-content: center; 
-    gap: 10px; 
-    flex-wrap: wrap; 
-}
-
-#destaqueEvento img {
-    width: 30%; 
-    height: auto; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
-}
-
-<<<<<<< HEAD
 /* Destaque */
 main {
     height: 75vh;
@@ -561,8 +404,8 @@ main {
         height: 120px;
     }  
     #logo img {
-        width: 130px;
-        height: 130px;
+        width: 110px;
+        height: 110px;
         margin-top: 1px;
     }   
 
@@ -589,10 +432,6 @@ main {
     nav ul li a:hover {
         color:#ec45af
     }
-
-    #destaqueEvento img {
-        margin-right: 50px;
-    }    
 
     #destaqueEvento img {
         margin-right: 50px;
